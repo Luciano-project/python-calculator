@@ -1,2 +1,2 @@
 # python-calculator
-Simple calculator made using python
+Simple calculator using Object Oriented Programmin in python. Possible calculations: add, subtraction, multiply and division. 
