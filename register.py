@@ -1,4 +1,5 @@
 # This is where we can find the simple arithmetic functions
+from math import sqrt
 class Calculator:
     def __init__(self,number1,number2):
         self.num1 = number1
@@ -24,3 +25,12 @@ class Calculator:
         resolution="{} / {} = {}".format(self.num1, self.num2, solution)
         return ["DIVIDE", resolution]
 
+    def sqrt_op(self):
+        solution = sqrt(self.num1)
+        resolution ="{}^(1/2) = {}".format(self.num1,solution)
+        return ["SQRT", resolution]
+
+    def exponential(self):
+        solution = (self.num1)**self.num2
+        resolution ="{}^{} = {}".format(self.num1, self.num2, solution)
+        return ["EXPONENTIAL", resolution]
